@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 151, 212);
+}
+
+h1{
+    color: white;
+}
+
+.formulario input{
+    width: 240px;
+    height: 40px;
+    border-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.formulario button{
+    height: 44px;
+    border-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    color: red;
+    font-size: 700;
+}
+
+.formulario button:hover{
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    background-color: rgb(241, 17, 17);
+    color: white;
+}
+
+.tabela{
+    width: 460px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 800;
+}
+.tabela th{
+    background-color: white;
+    color: black;
+}
+
+.tabela td{
+    background-color: rgba(228, 219, 219, 0.192);
+}
+
+.tabela button{
+    width: 100%;
+    height: auto;
+    border-style: none;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    color: red;
+    font-size: 700;
+    float: right;
+    margin-left: 5px;
+}
+
+
+.tabela button:hover{
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    background-color: rgb(241, 17, 17);
+    color: white;
+
+}
