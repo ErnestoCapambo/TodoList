@@ -1,3 +1,4 @@
+//  Meu codigo js 
 const conteudo=document.createElement("table"),form=document.querySelector(".formulario");form.addEventListener("submit",function(a){a.preventDefault();const b=document.querySelector("#nome").value;if(localStorage.listuser){let a=JSON.parse(localStorage.listuser);if(0<a.length){const c=a[a.length-1],d=c.id+1,e=a.concat({id:d,nome:b});localStorage.setItem("listuser",JSON.stringify(e))}else{const a=JSON.parse(localStorage.listuser),c=a.concat({id:1,nome:b});localStorage.setItem("listuser",JSON.stringify(c))}}else localStorage.setItem("listuser",JSON.stringify([{id:1,nome:b}]));mostrarDados()});function mostrarDados(){const a=localStorage.listuser;if(a){const b=JSON.parse(a),c=document.querySelector("body");conteudo.className="tabela",conteudo.innerHTML="",conteudo.innerHTML=`
             <tr>
                 <th>Id</th>
